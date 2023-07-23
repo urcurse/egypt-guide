@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>FIGMA | Макеты для верстки — Верстка страницы</title>
-	<meta name="description" content="Макет для верстки сайта был взял с телеграм канала FIGMA | Макеты для верстки">
+    <meta charset="UTF-8">
+    <title>FIGMA | Макеты для верстки — Верстка страницы</title>
+    <meta name="description" content="Макет для верстки сайта был взял с телеграм канала FIGMA | Макеты для верстки">
     <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/necolas.github.io_normalize.css_8.0.1_normalize.css">
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
 
     <!-- Начало: Данный блок удалять нельзя -->
@@ -15,18 +19,389 @@
         </a>
         <div>
             <p>
-                Данная верстка, была реализована пользователем в рамках обучающего телеграм канал <a href="https://t.me/s/FigmaToHTML" target="_blank">FIGMA | Макеты для верстки</a>
+                Данная верстка, была реализована пользователем в рамках обучающего телеграм канал <a
+                    href="https://t.me/s/FigmaToHTML" target="_blank">FIGMA | Макеты для верстки</a>
             </p>
             <p>
-                При помощи <a href="https://t.me/HtmlCodeForMoney_bot?from_git" target="_blank">Telegram-бота</a> пользователь получил оплату за верстку этого макета.
+                При помощи <a href="https://t.me/HtmlCodeForMoney_bot?from_git" target="_blank">Telegram-бота</a>
+                пользователь получил оплату за верстку этого макета.
             </p>
         </div>
     </div>
     <!-- Конец -->
 
     <div class="main">
-        В данном блоке размещается верстка
+        <header class="header">
+            <div class="container">
+                <div class="header__wrapper">
+                    <div class="left-block">
+                        <a href="#" class="logo">EgyptTour</a>
+                        <div class="header__search">
+                            <label for="search"><img src="img/icons/search.svg" alt="search logo"
+                                    class="header__search-logo"></label>
+
+                            <input id="search" type="search" class="header__search-input" placeholder="search">
+                        </div>
+                    </div>
+                    <div class="right-block">
+                        <nav class="nav">
+                            <ul class="menu">
+                                <li class="menu__item"><a href="#" class="menu__link">Home</a></li>
+                                <li class="menu__item"><a href="#" class="menu__link">Guides</a></li>
+                                <li class="menu__item"><a href="#" class="menu__link">About</a></li>
+                                <li class="menu__item"><a href="#" class="menu__link">Inspiration</a></li>
+                                <li class="menu__item"><a href="#" class="menu__link">Contact</a></li>
+                            </ul>
+                        </nav>
+                        <button class="signup-btn">Sign Up</button>
+                    </div>
+                </div>
+
+            </div>
+        </header>
+
+        <section class="promo">
+            <div class="container_bg">
+                <div class="promo__inner">
+                    <h1 class="promo__header">Find the Best Egyptian Guide</h1>
+                    <img src="img/promo_bg.png" alt="promo bg" class="bg">
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="promo__banner">
+                    <form action="#" class="form-banner">
+                        <div class="banner__option">
+                            <div class="banner__option-title">Gender</div>
+                            <select class="banner__option-select">
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="notstated">Not stated</option>
+                            </select>
+                        </div>
+                        <div class="banner__option">
+                            <div class="banner__option-title">Age</div>
+                            <select class="banner__option-select">
+                                <option value="age18">18+</option>
+                                <option value="age24">24+</option>
+                                <option value="age35">35+</option>
+                            </select>
+                        </div>
+                        <div class="banner__option">
+                            <div class="banner__option-title">Language</div>
+                            <select class="banner__option-select">
+                                <option value="english">English</option>
+                                <option value="arabic">Arabic</option>
+                                <option value="russian">Russian</option>
+                            </select>
+                        </div>
+                        <div class="banner__option">
+                            <div class="banner__option-title">Lacalisation</div>
+                            <select class="banner__option-select">
+                                <option value="cairo">Cairo</option>
+                                <option value="alexandria">Alexandria</option>
+                                <option value="luxor">Luxor</option>
+                            </select>
+                        </div>
+                        <button class="banner__button" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="guides">
+            <div class="container">
+                <div class="guides__header">
+                    <h2 class="guides__title">Guides for you!</h2>
+                    <a href="#" class="guides__btn">See All Guides</a>
+                </div>
+                <div class="guides__people">
+                    <a class="guides__card">
+                        <img src="img/photos/boy1.png" alt="first guide" class="guides__photo">
+                        <div class="guides__name">Abayomi Mallik</div>
+                        <div class="guides__rating">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                <path
+                                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                <path
+                                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                <path
+                                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                <path
+                                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                <path
+                                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                            </svg>
+                        </div>
+                        <span href="#" class="guides__rewievs">1000+ reviews</span>
+                    </a>
+                    <a class="guides__card">
+                        <img src="img/photos/girl1.png" alt="first guide" class="guides__photo">
+                        <div class="guides__name">Berenike Eman</div>
+                        <div class="guides__rating">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                <path
+                                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                <path
+                                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                <path
+                                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                <path
+                                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                <path
+                                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                            </svg>
+                        </div>
+                        <span href="#" class="guides__rewievs">1000+ reviews</span>
+                    </a>
+                    <a class="guides__card">
+                        <img src="img/photos/boy2.png" alt="first guide" class="guides__photo">
+                        <div class="guides__name">Abu Bakar</div>
+                        <div class="guides__rating">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                <path
+                                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                <path
+                                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                <path
+                                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                <path
+                                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                <path
+                                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                            </svg>
+                        </div>
+                        <span href="#" class="guides__rewievs">1000+ reviews</span>
+                    </a>
+                    <a class="guides__card">
+                        <img src="img/photos/girl2.png" alt="first guide" class="guides__photo">
+                        <div class="guides__name">Dendera Heba</div>
+                        <div class="guides__rating">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                <path
+                                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                <path
+                                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                <path
+                                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                <path
+                                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                <path
+                                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                            </svg>
+                        </div>
+                        <span href="#" class="guides__rewievs">1000+ reviews</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="process">
+            <div class="container">
+                <div class="process__title">How does it Work?</div>
+                <div class="process__inner">
+                    <div class="process__card">
+                        <img src="img/cards/card1.png" alt="img for card 1" class="process__card-img">
+                        <div class="process__card-text">Select a Guide</div>
+                    </div>
+                    <div class="process__card">
+                        <img src="img/cards/card2.png" alt="img for card 2" class="process__card-img">
+                        <div class="process__card-text">Contact Guide</div>
+                    </div>
+                    <div class="process__card">
+                        <img src="img/cards/card3.png" alt="img for card 3" class="process__card-img">
+                        <div class="process__card-text">Create your Travel</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="reference">
+            <div class="container_bg">
+                <div class="reference__inner">
+                    <div class="reference__text">
+                        Are you a Tourist Guide in Egypt?
+                    </div>
+                    <img src="img/reference_bg-overlay.jpg" alt="background" class="reference-bg">
+                </div>
+            </div>
+            <div class="container">
+                <div class="reference__banner">
+                    <div class="reference__banner-text">Be referenced on our site, <span>it's 100% free!</span></div>
+                    <div class="reference__banner-join">
+                        <a href="#" class="reference-btn">I am a Tourist Guide</a>
+                        <div class="reference__tourists">
+                            <div class="reference__tourists-photos">
+                                <img src="img/photos/ref1.png" alt="tourist photo" class="reference__tourists-img-1">
+                                <img src="img/photos/ref2.png" alt="tourist photo" class="reference__tourists-img-2">
+                                <img src="img/photos/ref3.png" alt="tourist photo" class="reference__tourists-img-3">
+                                <img src="img/photos/ref4.png" alt="tourist photo" class="reference__tourists-img-4">
+                            </div>
+                            <div class="reference__tourists-text"><span>1000+</span> tourist<br> join us</div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+        <section class="learn">
+            <div class="container">
+                <div class="learn__title">Learn more About Egypt</div>
+                <div class="learn__inner">
+                    <div class="learn__left-block">
+                        <div class="learn__card">
+                            <img src="img/learn1.jpg" alt="picture with palms" class="learn__photo">
+                            <div class="learn__tag">Hotel</div>
+                            <div class="learn__link">
+                                <a href="#" class="learn__link-title">Where to sleep in Luxor?
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="learn__right-block">
+                        <div class="learn__card">
+                            <img src="img/learn2.jpg" alt="restaurant photo" class="learn__photo">
+                            <div class="learn__card-inner">
+                                <div class="learn__tag">Restaurant</div>
+                                <div class="learn__link">
+                                    <a href="#" class="learn__link-title">5 restaurant in Cairo
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="learn__card">
+                            <img src="img/learn3.jpg" alt="pyramids" class="learn__photo">
+                            <div class="learn__card-inner">
+                                <div class="learn__tag">Advance & Tip</div>
+                                <div class="learn__link">
+                                    <a href="#" class="learn__link-title">Is Egypt dangerous?
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__top-block">
+                    <div class="footer__descr">
+                        <a href="#" class="logo">EgyptTour</a>
+                        <p class="footer__descr-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                            amet
+                            sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt
+                            nostrud
+                            amet.</p>
+                    </div>
+                    <div class="footer__links">
+                        <div class="footer__links-title">Useful Links</div>
+                        <ul class="footer__links-block">
+                            <li class="footer__links-item"><a href="#">About</a></li>
+                            <li class="footer__links-item"><a href="#">Guide</a></li>
+                            <li class="footer__links-item"><a href="#">Inspiration</a></li>
+                            <li class="footer__links-item"><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__resources">
+                        <div class="footer__resources-title">Resources</div>
+                        <ul class="footer__resources-block">
+                            <li class="footer__resources-item"><a href="#">Become a guide</a></li>
+                            <li class="footer__resources-item"><a href="#">Legal</a></li>
+                            <li class="footer__resources-item"><a href="#">Blog</a></li>
+                            <li class="footer__resources-item"><a href="#">Help</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__contacts">
+                        <div class="footer__contacts-title">Contact Us</div>
+                        <div class="footer__contacts-email">
+                            <img src="img/icons/contacts_letter.svg" alt="contacts" class="email-icon">
+                            <a href="mailto:infomail@gmail.com" class="email-link">infomail@gmail.com</a>
+                        </div>
+                        <div class="footer__contacts-location">
+                            <img src="img/icons/contacts_pin.svg" alt="location" class="location-icon">
+                            <a href="https://goo.gl/maps/EVruu4ZVDbcqsATZ8" class="email-link" target="_blank">48 Street
+                                Road, Cairo</a>
+                        </div>
+                        <div class="footer__socials">
+                            <a href="https://facebook.com/" class="footer__socials-link"><img
+                                    src="img/icons/socials-fb.svg" alt="facebook link"></a><a
+                                href="https://twitter.com/" class="footer__socials-link"><img
+                                    src="img/icons/socials-tw.svg" alt="twitter link"></a><a
+                                href="https://www.instagram.com/" class="footer__socials-link"><img
+                                    src="img/icons/socials-inst.svg" alt="instagram link"></a><a
+                                href="https://linkedin.com" class="footer__socials-link"><img
+                                    src="img/icons/socials-ld.svg" alt="linkedin link"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__bottom-block">
+                    <div class="footer__copyright">
+                        © 2022 <a href="#">EgyptTour</a>
+                    </div>
+                    <div class="footer__policy">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Term of Condition</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
 
 </body>
+
 </html>
